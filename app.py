@@ -27,16 +27,8 @@ def ai_prompt():
     ## AI ZIPLINK AGENT ##
     swml_web_hook_base_url = ngrok_tunnel_url
     zip_code_table = {
-"60007":"+2124716022",
-"10001":"+2124716023",
-"33101":"+2124716024",
-"90001":"+2124716025",
-"77001":"+2124716026",
-"80014":"+2124716027",
-"63101":"+2124716028",
-"97035":"+2124716029",
-"85641":"+2124716030",
-"30033":"+2124716031",
+"90210":"+13105550123",
+"10001":"+12125550123"
 }
 
     swml_ai_prompt = '''Your name is Zippy an AI Assistant for ZipLink.  Your job is to transfer the caller to the proper office depending on their location determined by ZIP codes.
@@ -85,10 +77,6 @@ def ai_prompt():
                 'prompt': {
                     'text': swml_ai_prompt
                 },
-                'post_prompt': {
-                  'text': 'Summarize conversation'
-                },
-                'post_prompt_url': 'https://webhook.site/bb8196a2-1543-44bc-a63c-dd7c579a0fb6',
                 'SWAIG': {
                     'functions': [
                         {
